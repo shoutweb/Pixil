@@ -12,10 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
+Route::get('/discover', function () {
+    return view('discover');
+});
 
-Route::get('/test', function () {
-    return view('templateHome');
+Route::get('/artist', function () {
+    return view('artist');
+});
+
+Route::get('/payment', function () {
+    return view('payment');
+});
+
+Route::get('/support', function () {
+    return view('support');
+});
+
+Route::get('/support_splice', function () {
+    return view('support');
 });
